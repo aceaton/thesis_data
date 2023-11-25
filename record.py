@@ -7,11 +7,12 @@ import socket
 # Function to start TShark capture
 def start_tshark_capture(port, ip):
     filter_expression = f"tcp port {port}" # and dst {ip}"
+    inter = "ens1f0np0"
 
     filter_expression = f"tcp and dst {ip}"
     tshark_command = [
         "tshark",
-        "-i", "en0",  # Replace with your network interface
+        "-i", inter,  # Replace with your network interface
         "-f", filter_expression,
         "-w", "captured_packets.pcap",
     ]
