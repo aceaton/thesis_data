@@ -20,7 +20,7 @@ websites = [
 # "https://www.Amazon.com"]
 
 # Initialize the web driver (you'll need to specify the path to your driver)
-driver = webdriver.Chrome(executable_path="/Users/annaeaton/Downloads/chromedriver-mac-x64/chromedriver")
+driver = webdriver.Chrome(executable_path="/Users/annaeaton/Downloads/chromedriver-mac-x64-119/chromedriver")
 
 try:
     # Loop through the list of websites
