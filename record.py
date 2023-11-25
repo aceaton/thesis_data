@@ -19,12 +19,14 @@ def start_tshark_capture(port, ip):
 
 # Function to open a website using Selenium
 def open_website(port,url):
+    # chromedriver_install_loc = "/Users/annaeaton/Downloads/chromedriver-mac-x64-119/chromedriver"
+    chromedriver_install_loc = "/users/aceaton/chromedriver"
     # driver = webdriver.Chrome()  # Make sure you have the ChromeDriver executable in your PATH
     options = webdriver.ChromeOptions()
     options.add_argument(f"--remote-debugging-port={port}")
     options.add_argument("--headless")  # Run in headless mode
     options.add_argument("--disable-gpu")  # Disable GPU acceleration
-    driver = webdriver.Chrome(options=options,executable_path="/Users/annaeaton/Downloads/chromedriver-mac-x64-119/chromedriver") 
+    driver = webdriver.Chrome(options=options,executable_path=chromedriver_install_loc) 
     driver.get(url)
     time.sleep(10)  # Wait for 10 seconds (adjust as needed)
     driver.quit()
