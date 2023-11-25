@@ -28,6 +28,7 @@ def open_website(port,url):
     options.add_argument("--disable-gpu")  # Disable GPU acceleration
     driver = webdriver.Chrome(options=options)#,executable_path=chromedriver_install_loc) 
     driver.get(url)
+    print(f"got {url}")
     time.sleep(10)  # Wait for 10 seconds (adjust as needed)
     driver.quit()
 
