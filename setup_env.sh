@@ -19,6 +19,8 @@
 # c
 
 
+# SCRIPT TO SET UP ENVIRONMENT TO RUN WIRESHARK AND SELENIUM
+
 # ON UBUNTU 22.4
 # get wireshark and tshark
 sudo add-apt-repository ppa:wireshark-dev/stable
@@ -40,3 +42,13 @@ unzip chromedriver_linux64.zip
 
 # get selenium
 pip3 install selenium
+pip3 install pyshark
+pip3 install matplotlib
+
+sudo chmod +x /usr/bin/dumpcap
+
+sudo apt --fix-broken install
+sudo apt install tshark
+
+# get the interface to connect to
+ifconfig
