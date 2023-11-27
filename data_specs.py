@@ -1,4 +1,4 @@
-samples_per_site = 10
+samples_per_site = 90
 
 websites = ['zippyshare.com', 
             'youtube-mp3.org', 
