@@ -102,7 +102,7 @@ def capture_site(site, number, capture_time):
 def test():
     failures = []
     # specs from data_specs
-    for i in range(10,10+samples_per_site):
+    for i in range(samples_per_site):
         for site in websites:
             print(site)
             print(i)
@@ -114,3 +114,5 @@ def test():
     print(failures)
 
 test()
+
+# nohup python3 record.py > "out.txt" &
