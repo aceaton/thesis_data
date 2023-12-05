@@ -7,6 +7,6 @@ samples_per_site = 10
 capture_time = 10
 
 websites = ['mozilla.org', 'pandora.com', 'onlinesbi.com', 'intuit.com', 'reimageplus.com', 'ebay.com', 'skype.com', 'varzesh3.com', 'messenger.com', 'office.com', 'avito.ru', 'ok.ru', 'gmx.net', 'blastingnews.com', 'ameblo.jp', 'cnn.com', 'weebly.com', 'netflix.com', 'aol.com', 'theguardian.com', 'steamcommunity.com', 'softonic.com', 'flipkart.com', 'leboncoin.fr', 'daum.net', 'rambler.ru', 'slack.com', 'dailymotion.com', 'subscene.com', 'wikia.com', 'blackboard.com', 'stackexchange.com', 'pinterest.com', 'zippyshare.com', 'gfycat.com', 'yahoo.com', 'wikihow.com', 'roblox.com', 'wikimedia.org', 'vice.com', 'quora.com', 'godaddy.com', 'webtretho.com', 'youm7.com', 'rolloid.net', 'hatena.ne.jp', 'amazon.com', 'popads.net', 'seasonvar.ru', 'msn.com', 'wikipedia.org', 'openload.co', 'myway.com']
-websites = websites[10]
+websites = websites[:10]
 
 print(websites)
